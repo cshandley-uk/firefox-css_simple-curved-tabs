@@ -1,0 +1,36 @@
+
+/* Make tabs curved - which also affects tab buttons... */
+:root {
+	--tab-border-radius: 20px / 40px 40px 0px 0px !important;
+}
+
+/* ...So make tab buttons circles instead */
+#TabsToolbar :is(.toolbarbutton-icon, .toolbarbutton-badge-stack, .tab-close-button) {
+	border-radius: 50% !important;
+}
+
+/* Remove the gap below tabs */
+#tabbrowser-tabs {
+	height: var(--tab-min-height);
+	padding-inline-start: 0px !important;
+}
+
+/* Remove the gap above tabs */
+.tabbrowser-tab > .tab-stack > .tab-background {
+	-moz-box-orient: horizontal !important;
+	background-image: none !important;
+	background-color: transparent !important;
+	margin-top: 1px !important;
+}
+
+/* Make the active tab colour lighter */
+:root .tabbrowser-tab[selected="true"] .tab-background {
+	background-color: var(--toolbar-bgcolor) !important;
+	background-image: var(--toolbar-bgimage) !important;
+}
+
+/* Make a tab lighter when hovered over */
+:root .tabbrowser-tab:hover:not([visuallyselected]) .tab-background {
+	background-color: var(--toolbar-bgcolor) !important;
+	background-image: var(--toolbar-bgimage) !important;
+}
