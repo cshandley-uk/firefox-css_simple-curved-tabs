@@ -9,18 +9,33 @@
 	border-radius: 50% !important;
 }
 
-/* Remove the gap below tabs */
-#tabbrowser-tabs {
-	height: var(--tab-min-height);
-	padding-inline-start: 0px !important;
-}
-
 /* Remove the gap above tabs */
 .tabbrowser-tab > .tab-stack > .tab-background {
 	-moz-box-orient: horizontal !important;
 	background-image: none !important;
 	background-color: transparent !important;
 	margin-top: 1px !important;
+}
+
+/* Remove the gap below tabs */
+:root {
+	--tab-block-margin: 0px !important;
+}
+#nav-bar {
+	 margin-top: -1px !important; 
+}
+
+/* Reduce height of tabs */
+:root {
+  --tab-max-height: 32px !important;
+  --tab-min-height:        var(--tab-max-height) !important;
+  --urlbar-toolbar-height: var(--tab-max-height) !important;
+}
+#tabbrowser-tabs,
+#tabbrowser-tabs > #tabbrowser-arrowscrollbox,
+.tabbrowser-tabs .tabbrowser-tab {
+  max-height: var(--tab-max-height) !important;
+  min-height: var(--tab-min-height) !important;
 }
 
 /* Make the active tab colour lighter */
