@@ -1,11 +1,11 @@
 
-/* Make tabs curved - which also affects tab buttons... */
-:root {
+/* Make tabs curved - which also affects the tab close buttons... */
+#tabbrowser-tabs .tab-stack {
 	--tab-border-radius: 20px / 40px 40px 0px 0px !important;
 }
 
-/* ...So make tab buttons circles instead */
-#TabsToolbar :is(.toolbarbutton-icon, .toolbarbutton-badge-stack, .tab-close-button) {
+/* ...So make the tab buttons be circles instead */
+#TabsToolbar :is(.tab-close-button) {
 	border-radius: 50% !important;
 }
 
