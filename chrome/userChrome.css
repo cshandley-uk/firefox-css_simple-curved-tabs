@@ -40,12 +40,10 @@
 
 /* Make the active tab colour lighter */
 :root .tabbrowser-tab[selected="true"] .tab-background {
-	background-color: var(--toolbar-bgcolor) !important;
-	background-image: var(--toolbar-bgimage) !important;
+	background-color: var(--toolbar-background-color) !important;
 }
 
 /* Make a tab lighter when hovered over */
 :root .tabbrowser-tab:hover:not([visuallyselected]) .tab-background {
-	background-color: var(--toolbar-bgcolor) !important;
-	background-image: var(--toolbar-bgimage) !important;
+	background-color: var(--toolbar-background-color) !important;
 }
