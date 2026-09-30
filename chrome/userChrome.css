@@ -12,9 +12,9 @@
 /* Remove the gap above tabs */
 .tabbrowser-tab > .tab-stack > .tab-background {
 	-moz-box-orient: horizontal !important;
-	background-image: none !important;
-	/*background-color: transparent;*/
 	margin-top: 1px !important;
+	/*background-image: none !important;*/
+	/*background-color: transparent;*/
 }
 
 /* Remove the gap below tabs */
@@ -40,10 +40,10 @@
 
 /* Make the active tab colour lighter */
 :root .tabbrowser-tab[selected="true"] .tab-background {
-	background-color: var(--tab-background-color-selected) !important;
+	/*background-color: var(--tab-background-color-selected) !important;*/
 }
 
 /* Make a tab lighter when hovered over */
 :root .tabbrowser-tab:hover:not([visuallyselected]) .tab-background {
-	background-color: var(--tab-background-color-hover) !important;
+	/*background-color: var(--tab-background-color-hover) !important;*/
 }
